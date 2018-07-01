@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+.slide ul {position:relative; padding-top:40%;}
+.slide ul li {position:absolute; left:0; top:0; width:100%; height:100%;}
+
+.tab {width:100%; clear:both; overflow:hidden; text-align:center; padding:0 0 20px 0; white-space:nowrap;}
+.tab li {display:inline-block; background:#ffa08f; border-right:1px solid #fff; width:20%; line-height:50px; font-size:14px; font-weight:bold; cursor:pointer; color:#fff;}
+.tab li.on {background:#ff583a;}
+.tab1 .tab li {background:#7fdff0;}
+.tab1 .tab li.on {background:#4ac7dd;}
+.tab2 .tab li {background:#a9cb73;}
+.tab2 .tab li.on {background:#97c253;}
+.tab3 .tab li {background:#d2a8e0;}
+.tab3 .tab li.on {background:#db7fe3;}
+.tab4 .tab li {background:#a9d0fb;}
+.tab4 .tab li.on {background:#7faee3;}
+
+.slide_page {padding-top:15px; width:100%; clear:both;}
+.slide_page li {width:100px; z-index:1; padding-left:1px; margin:0 3px 3px 0; position:relative; display:inline-block; font-size:0; line-height:0; cursor:pointer;}
+.slide_page li.on {z-index:2;}
+.slide_page li img {transition:none;}
+.slide_page li.on img {transition:none; outline:2px solid #ff583a;}
+
+.tab1 .slide_page li.on img {outline:2px solid #4ac7dd;}
+.tab2 .slide_page li.on img {outline:2px solid #97c253;}
+.tab3 .slide_page li.on img {outline:2px solid #db7fe3;}
+.tab4 .slide_page li.on img {outline:2px solid #7faee3;}
+
+.price_info {width:100%; clear:both; margin-top:30px; white-space:nowrap;}
+.price_info th {width:33%; border:1px solid #ccc; height:50px; text-align:center;}
+.price_info .th1 {background:#eaeaea;}
+.price_info .th2 {background:#eee;}
+.price_info td {border:1px solid #ddd; line-height:32px; padding:0 5px;}
+
+.txt_info_title {font-size:18px; color:#333; font-weight:bold; text-align:center; padding:50px 20px 20px 20px; line-height:30px; text-shadow: 0 0 1px rgba(0,0,0,0.2)}
+.txt_info {font-size:20px; font-weight:bold; text-align:center; color:#000; padding-bottom:30px; line-height:30px;}
+.txt_info a {text-decoration:underline; color:#ff583a;}
+
+p.map {text-align:center;}
+
+@media screen and (max-width:1050px) {
+	.price_info {font-size:10px;}
+	.price_info td {padding:0 2px;}
+}
+@media screen and (max-width:770px) {
+	.slide_page li {width:50px;}
+	.tab li {font-size:11px; font-weight:normal; letter-spacing:-0.5px;}
+}
+@media screen and (max-width:500px) {
+	.price_info {font-size:8px;}
+	.price_info td {padding:0; letter-spacing:0px;}
+	
+}
+@media screen and (max-width:400px) {
+	.price_info {font-size:6px;}
+	.price_info td {padding:0; letter-spacing:-2px;}
+	
+}

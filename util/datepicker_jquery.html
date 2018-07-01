@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="robots" content="index,follow">
+<title>datepicker jquery</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="/img/favicon.ico?ver=0.1" type="image/x-icon">
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+<style>
+.datePicker {width:100%; overflow:hidden; padding:15px; border:1px solid #ddd; text-align:center; line-height:40px;}
+.datePicker h5 {display:inline-block; text-align:center; font-size:15px; padding:0px 0 10px 0;}
+.datePicker ol,
+.datePicker ul {width:100%; font-size:0; line-height:0; text-align:left; margin-left:0.6%;}
+.datePicker li {width:14.2%; display:inline-block; height:40px; border:1px solid #e9e9e9; text-align:center; vertical-align:top; margin:-1px 0 0 -1px; padding:0; font-size:12px; line-height:40px;}
+.datePicker li:nth-child(7n) {color:blue;}
+.datePicker li:nth-child(7n+1) {color:red;}
+.datePicker li.today {font-weight:bold; background:#fcfcfc;}
+.datePicker li.on {font-weight:bold; background:#777; color:#fff;}
+.datePicker ol li {background:#f9f9f9;}
+.datePicker ul {height:240px;}
+.datePicker ul li.day {cursor:pointer;}
+.datePicker ul li.off {color:#ccc; cursor:default;}
+.datePicker .prev {position:absolute; left:15px; width:40px;height:40px;top:15px; background:url(/img/common/sp.png) no-repeat -80px 0; cursor:pointer; overflow:hidden; text-indent:-9999px;}
+.datePicker .next {position:absolute; right:15px; width:40px;height:40px;top:15px; background:url(/img/common/sp.png) no-repeat -120px 0; cursor:pointer; overflow:hidden; text-indent:-9999px;}
+</style>
+<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="datepicker_jquery.js"></script>
+</head>
+<body>
+<div class="datePicker" id="datePicker">
+	<span class="prev">Prev</span>
+	<span class="next">Next</span>
+	<h5><strong class="year"></strong> 년 <strong class="month"></strong> 월</h5>
+	<ol>
+		<li>일</li>
+		<li>월</li>
+		<li>화</li>
+		<li>수</li>
+		<li>목</li>
+		<li>금</li>
+		<li>토</li>
+	</ol>
+	<ul></ul>
+</div>
+<input name="target" />
+</body>
+</html>

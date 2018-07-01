@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+#container h2 span.guide {color:#ff5500;}
+
+#info_wrap {/* width:800px; */ padding-top:30px; border:0; margin:0 auto; overflow:hidden;}
+
+.policy_wrap {width:100%; clear:both; overflow:hidden;}
+.policy {width:25%; display:inline-block; padding:5px; vertical-align: top;}
+.policy dl {padding:5px; border:1px solid #eee; position:relative;}
+.policy dl dt {position:relative; padding-top:58%;}
+.policy dl dt img {width:100%; position:absolute; left:0; top:0;} 
+.policy dl dd {position:absolute; height:100%; left:0; color:#fff; top:0; padding:10px; background:rgba(0,0,0,0.3); width:100%; overflow:hidden; text-shadow:1px 1px 1px #000;}
+.policy dl dd:hover {background:rgba(0,0,0,0);}
+.policy dl dd h3 {font-size:15px; line-height:30px; color:#fff; white-space:nowrap;}
+.policy dl dd h3 span {color:#ff9494; font-weight:normal;}
+.policy dl dd h3 span.category {color:#ff9494; font-weight:bold;}
+.policy dl dd p.desc {line-height:20px; overflow:hidden; color:#eee;}
+.policy dl dd p.price span {text-decoration:line-through; color:#ccc;}
+.policy dl dd p.price strong {font-size:15px;}
+
+.img_wrap ul {width:100%; clear:both; overflow:hidden;}
+.img_wrap ul li {width:25%; display:inline-block; padding:5px; vertical-align: top;}
+.img_wrap ul li img {width:100%; border:5px solid #fff; box-shadow:1px 1px 2px rgba(0,0,0,0.1);}
+
+@media screen and (max-width:1050px) {
+	.policy {width:50%;}
+	.img_wrap ul li {width:50%;}
+}
+@media screen and (max-width:750px) {
+	.policy dl dd h3 {font-size:12px;}
+}
+@media screen and (max-width:400px) {
+	.policy dl dd h3 {font-size:11px; line-height:20px; letter-spacing:-1px;}
+	.policy dl dd p.desc {font-size:11px; line-height:14px;}
+}

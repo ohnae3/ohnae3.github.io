@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#reservation {width:700px; margin:0 auto; padding:20px 0 30px 0; overflow:hidden;}
+#reservation table {width:100%; clear:both; margin-top:10px;}
+#reservation table th {color:#888; width:100px; padding:5px; background-color:#fcfcfc; border:1px solid #ddd; padding-left:10px;}
+#reservation table th.required {color:#333;}
+#reservation table th.required:after {content:'*'; display:inline-block; color:#ff0000; padding-left:5px;}
+#reservation table td {border:1px solid #ddd; padding:5px;}
+#reservation table td input {width:100%;}
+#reservation button {color:#fff; background:#bbb; border-radius:3px; text-shadow:1px 1px 1px rgba(0,0,0,0.3); height:50px; padding:0 10px; line-height:50px; margin-top:10px; width:100%;}
+#reservation button:hover {opacity:0.9;}
+#reservation button[type="submit"]{color:#fff; background:#ff5500;}
+#reservation button[type="submit"][disabled="disabled"]{color:#fff; background:#ff5500; opacity:0.4;}
+#reservation .captcha {position:absolute; right:0; top:0; height:30px; border:1px solid #ddd; box-sizing:border-box;}
+
+.ok {color:#8fdc69; padding:5px 0 5px 0; font-size:11px;}
+.no {color:#ff5500; padding:5px 0 5px 0; font-size:11px;}
+
+@media screen and (max-width:800px) {
+    #reservation {width:100%;}
+}
