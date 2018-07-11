@@ -85,6 +85,7 @@
 		
 		//주변시설
 		$scope.facList = [
+			{url : '/img/fac/fac12.png'},
 			{url : '/img/fac/fac11.png'},
 			{url : '/img/fac/fac10.png'},
 			{url : '/img/fac/fac0.png'},
