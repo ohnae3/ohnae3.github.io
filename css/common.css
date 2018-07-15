@@ -61,7 +61,7 @@ body {background:#fff;}
 #menu {width:100%; overflow:hidden; line-height:50px; background:#fff; height:50px;}
 #menu ul {white-space:nowrap; width:100%; text-align:center;}
 #menu ul li {color:#000; display:inline-block; font-weight:bold; font-size:18px; text-shadow:0 0 1px rgba(0,0,0,0.2);}
-#menu ul li a {-webkit-tap-highlight-color:transparent; tap-highlight-color:transparent; display:block; color:#000; overflow:hidden; position:relative; padding:0 15px;}
+#menu ul li a {-webkit-tap-highlight-color:transparent; display:block; color:#000; overflow:hidden; position:relative; padding:0 15px;}
 #menu ul li a span {display:block; position:relative; top:0; transition:0.2s all linear;}
 #menu ul li a strong {display:block; color:#ff5500; position:relative; top:0; transition:0.2s all linear;}
 #menu ul li a:hover span {color:#999;}
