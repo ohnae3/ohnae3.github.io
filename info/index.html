@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kor" ng-app="KaisaApp" ng-controller="KaisaController">
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,9 +38,9 @@ gtag('config', 'UA-121564625-1');
 <script src="/js/min/kaisa.js"></script>
 <script src="/js/controller/info/info.js"></script>
 </head>
-<body ng-controller="BodyController">
+<body data-ng-controller="BodyController">
 <p class="keywords">가평수상레저,모비딕수상레저,가평수상레져,모비딕수상레져,가평수상스키,가평웨이크보드,가평 수상레저,모비딕 수상레저,가평 수상레져,모비딕 수상레져,가평 수상스키,가평 웨이크보드,수상레저,수상레져,수상스키,웨이크보드</p>
-<div id="container" ng-class="{scroll_100 : window.scrollTop >= 100, scroll_150 : window.scrollTop >= 150, on : loading.first}">
+<div id="container" data-ng-class="{scroll_100 : window.scrollTop >= 100, scroll_150 : window.scrollTop >= 150, on : loading.first}">
 
 	<div kaisa-header></div>
 	<div kaisa-menu></div>
@@ -56,9 +56,9 @@ gtag('config', 'UA-121564625-1');
 					<p class="txt_guide">신한은행 (강진희) 110-293-148185</p>
 					<p class="txt_guide">패키지 이용요금은 결제 금액에 부가세 별도입니다.</p>
 					<h2>요금안내</h2>
-					<div class="policy" ng-repeat="i in policy">
+					<div class="policy" data-ng-repeat="i in policy">
 						<dl>
-							<dt><img ng-src="{{image.host}}{{i.url}}" alt="" /></dt>
+							<dt><img data-ng-src="{{image.host}}{{i.url}}" alt="" /></dt>
 							<dd>
 								<h3><span class="category">{{i.category}}</span> {{i.title}} <span>{{i.discountRate}}</span></h3>
 								<p class="desc">{{i.desc}}</p>
@@ -72,7 +72,7 @@ gtag('config', 'UA-121564625-1');
 					<h2>놀이기구 <span>다양한 놀이기구 준비완료</span></h2>
 					<div class="img_wrap">
 						<ul>
-							<li ng-repeat="i in playList"><img ng-src="{{image.host}}{{i.url}}" alt="" /></li>
+							<li data-ng-repeat="i in playList"><img data-ng-src="{{image.host}}{{i.url}}" alt="" /></li>
 						</ul>
 					</div>
 				</div>
@@ -81,7 +81,7 @@ gtag('config', 'UA-121564625-1');
 					<h2>주변시설 <span>신축 화장실,신축샤워실 완비</span></h2>
 					<div class="img_wrap">
 						<ul>
-							<li ng-repeat="i in facList"><img ng-src="{{image.host}}{{i.url}}" alt="" /></li>
+							<li data-ng-repeat="i in facList"><img data-ng-src="{{image.host}}{{i.url}}" alt="" /></li>
 						</ul>
 					</div>
 				</div>

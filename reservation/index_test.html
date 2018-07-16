@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kor" ng-app="KaisaApp" ng-controller="KaisaController">
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,9 +40,9 @@ gtag('config', 'UA-121564625-1');
 <script src="/js/module/kaisaDatepicker.js"></script>
 <script src="/js/controller/ski/reservation_test.js"></script>
 </head>
-<body ng-controller="BodyController">
+<body data-ng-controller="BodyController">
 <p class="keywords">가평수상레저,모비딕수상레저,가평수상레져,모비딕수상레져,가평수상스키,가평웨이크보드,가평 수상레저,모비딕 수상레저,가평 수상레져,모비딕 수상레져,가평 수상스키,가평 웨이크보드,수상레저,수상레져,수상스키,웨이크보드</p>
-<div id="container" ng-class="{scroll_100 : window.scrollTop >= 100, scroll_150 : window.scrollTop >= 150, on : loading.first}">
+<div id="container" data-ng-class="{scroll_100 : window.scrollTop >= 100, scroll_150 : window.scrollTop >= 150, on : loading.first}">
 
 	<div kaisa-header></div>
 	<div kaisa-menu></div>
@@ -53,7 +53,7 @@ gtag('config', 'UA-121564625-1');
 			<p style="padding:150px 0 0 0; font-size:26px; color:#333; line-height:40px; text-align:center;">페이지 준비중입니다!</p>
 			<p style="padding:0 0 150px 0; font-size:16px; line-height:40px; text-align:center;">곧 오픈예정입니다.</p>
 			 -->
-			<form id="reservation" name="reservationForm" ng-submit="reservation()">
+			<form id="reservation" name="reservationForm" data-ng-submit="reservation()">
 				<fieldset>
 					<legend>회원가입 폼</legend>
 					<div class="datePicker" date-picker model="reservationDate">
@@ -63,64 +63,64 @@ gtag('config', 'UA-121564625-1');
 						<tr>
 							<th class="required">방문일</th>
 							<td>
-								<input readonly="readonly" tabindex="1" autocomplete="off" type="text" name="DATE" ng-model="RESERVATION.DATE" required="required">
+								<input readonly="readonly" tabindex="1" autocomplete="off" type="text" name="DATE" data-ng-model="RESERVATION.DATE" required="required">
 							</td>
 						</tr>
 						<tr>
 							<th class="required">방문시간</th>
 							<td>
-								<select name="TIME" ng-model="RESERVATION.TIME">
+								<select name="TIME" data-ng-model="RESERVATION.TIME">
 									<option value="">시간을 선택해주세요.</option>
-									<option ng-repeat="option in option.time" value="{{option.id}}">{{option.name}}</option>
+									<option data-ng-repeat="option in option.time" value="{{option.id}}">{{option.name}}</option>
 							    </select>
 							</td>
 						</tr>
 						<tr>
 							<th class="required">이름</th>
 							<td>
-								<input tabindex="2" autocomplete="off" type="text" name="NAME" ng-model="RESERVATION.NAME" required="required">
-								<p class="no" ng-show="reservationForm.NAME.$touched && !RESERVATION.NAME">이름을 입력해주세요.</p>
+								<input tabindex="2" autocomplete="off" type="text" name="NAME" data-ng-model="RESERVATION.NAME" required="required">
+								<p class="no" data-ng-show="reservationForm.NAME.$touched && !RESERVATION.NAME">이름을 입력해주세요.</p>
 							</td>
 						</tr>
 						<tr>
 							<th class="required">인원</th>
 							<td>
-								<input tabindex="2" autocomplete="off" maxlength="3" type="TEL" name="PERSONNEL" only-number ng-model="RESERVATION.PERSONNEL" required="required" style="width:80px;"> 명
+								<input tabindex="2" autocomplete="off" maxlength="3" type="TEL" name="PERSONNEL" only-number data-ng-model="RESERVATION.PERSONNEL" required="required" style="width:80px;"> 명
 							</td>
 						</tr>
 						<tr>
 							<th class="required">연락처</th>
 							<td>
-								<input tabindex="3" autocomplete="off" maxlength="20" type="tel" name="PHONE" only-number ng-model="RESERVATION.PHONE" required="required">
+								<input tabindex="3" autocomplete="off" maxlength="20" type="tel" name="PHONE" only-number data-ng-model="RESERVATION.PHONE" required="required">
 							</td>
 						</tr>
 						<tr>
 							<th>이메일</th>
 							<td>
-								<input tabindex="4" autocomplete="off" maxlength="100" type="email" name="EMAIL" ng-model="RESERVATION.EMAIL">
+								<input tabindex="4" autocomplete="off" maxlength="100" type="email" name="EMAIL" data-ng-model="RESERVATION.EMAIL">
 							</td>
 						</tr>
 						<tr>
 							<th>요청사항</th>
 							<td>
-								<input tabindex="5" autocomplete="off" maxlength="100" type="text" name="NOTICE" ng-model="RESERVATION.NOTICE" required="required">
+								<input tabindex="5" autocomplete="off" maxlength="100" type="text" name="NOTICE" data-ng-model="RESERVATION.NOTICE" required="required">
 							</td>
 						</tr>
 						<tr>
 							<th class="required">비밀번호</th>
 							<td>
-								<input tabindex="6" autocomplete="off" maxlength="30" type="password" name="PASSWORD" ng-model="RESERVATION.PASSWORD" required="required">
+								<input tabindex="6" autocomplete="off" maxlength="30" type="password" name="PASSWORD" data-ng-model="RESERVATION.PASSWORD" required="required">
 							</td>
 						</tr>
 						<tr>						
 							<th class="required">비밀번호 확인</th>
 							<td>
-								<input tabindex="7" autocomplete="off" maxlength="30" type="password" name="PASSWORD2" ng-model="RESERVATION.PASSWORD2" required="required">
-								<p class="no" ng-show="RESERVATION.PASSWORD != RESERVATION.PASSWORD2">비밀번호가 다릅니다.</p>
+								<input tabindex="7" autocomplete="off" maxlength="30" type="password" name="PASSWORD2" data-ng-model="RESERVATION.PASSWORD2" required="required">
+								<p class="no" data-ng-show="RESERVATION.PASSWORD != RESERVATION.PASSWORD2">비밀번호가 다릅니다.</p>
 							</td>
 						</tr>
 					</table>
-					<button type="submit" tabindex="8" ng-disabled="!(RESERVATION.NAME
+					<button type="submit" tabindex="8" data-ng-disabled="!(RESERVATION.NAME
 						&& RESERVATION.TIME
 						&& RESERVATION.PERSONNEL
 						&& RESERVATION.PHONE

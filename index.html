@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kor" ng-app="KaisaApp" ng-controller="KaisaController">
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,9 +38,9 @@ gtag('config', 'UA-121564625-1');
 <script src="/js/min/kaisa.js"></script>
 <script src="/js/controller/main/main.js"></script>
 </head>
-<body ng-controller="BodyController">
+<body data-ng-controller="BodyController">
 <p class="keywords">가평수상레저,모비딕수상레저,가평수상레져,모비딕수상레져,가평수상스키,가평웨이크보드,가평 수상레저,모비딕 수상레저,가평 수상레져,모비딕 수상레져,가평 수상스키,가평 웨이크보드,수상레저,수상레져,수상스키,웨이크보드</p>
-<div id="container" ng-class="{scroll_100 : window.scrollTop >= 100, scroll_150 : window.scrollTop >= 150, on : loading.first}">
+<div id="container" data-ng-class="{scroll_100 : window.scrollTop >= 100, scroll_150 : window.scrollTop >= 150, on : loading.first}">
 
 	<div kaisa-header></div>
 	<div kaisa-menu></div>
@@ -49,32 +49,32 @@ gtag('config', 'UA-121564625-1');
 		<div class="wrap">
 		
 			<div id="visual">
-				<div class="slide" ng-mouseover="visualIntervalStop()" ng-mouseout="visualIntervalStart()">
-					<button type="button" class="btn_prev" ng-click="visual.prev()"></button>
-					<button type="button" class="btn_next" ng-click="visual.next()"></button>
+				<div class="slide" data-ng-mouseover="visualIntervalStop()" data-ng-mouseout="visualIntervalStart()">
+					<button type="button" class="btn_prev" data-ng-click="visual.prev()"></button>
+					<button type="button" class="btn_next" data-ng-click="visual.next()"></button>
 					<ul>
-						<li ng-repeat="i in visualList" ng-show="$index == visual.idx"><img ng-src="{{image.host}}{{i.url}}" alt="" /></li>
+						<li data-ng-repeat="i in visualList" data-ng-show="$index == visual.idx"><img data-ng-src="{{image.host}}{{i.url}}" alt="" /></li>
 					</ul>
 				</div>
 			</div>
 		
-			<div class="play" ng-if="window.width >= 770">
+			<div class="play" data-ng-if="window.width >= 770">
 				<h2>놀이기구 <span class="more"><a href="/info/">더보기</a></span></h2>
-				<div class="slide" ng-mouseover="playIntervalStop()" ng-mouseout="playIntervalStart()">
-					<button type="button" class="btn_prev" ng-click="play.prev()"></button>
-					<button type="button" class="btn_next" ng-click="play.next()"></button>
+				<div class="slide" data-ng-mouseover="playIntervalStop()" data-ng-mouseout="playIntervalStart()">
+					<button type="button" class="btn_prev" data-ng-click="play.prev()"></button>
+					<button type="button" class="btn_next" data-ng-click="play.next()"></button>
 					<ul>
-						<li ng-repeat="i in playList" ng-show="$index == play.idx"><img ng-src="{{image.host}}{{i.url}}" alt="" /></li>
+						<li data-ng-repeat="i in playList" data-ng-show="$index == play.idx"><img data-ng-src="{{image.host}}{{i.url}}" alt="" /></li>
 					</ul>
 				</div>
 			</div>		
-			<div class="fac" ng-if="window.width >= 770">
+			<div class="fac" data-ng-if="window.width >= 770">
 				<h2>주변시설 <span class="more"><a href="/info/">더보기</a></span></h2>
-				<div class="slide" ng-mouseover="facIntervalStop()" ng-mouseout="facIntervalStart()">
-					<button type="button" class="btn_prev" ng-click="fac.prev()"></button>
-					<button type="button" class="btn_next" ng-click="fac.next()"></button>
+				<div class="slide" data-ng-mouseover="facIntervalStop()" data-ng-mouseout="facIntervalStart()">
+					<button type="button" class="btn_prev" data-ng-click="fac.prev()"></button>
+					<button type="button" class="btn_next" data-ng-click="fac.next()"></button>
 					<ul>
-						<li ng-repeat="i in facList" ng-show="$index == fac.idx"><img ng-src="{{image.host}}{{i.url}}" alt="" /></li>
+						<li data-ng-repeat="i in facList" data-ng-show="$index == fac.idx"><img data-ng-src="{{image.host}}{{i.url}}" alt="" /></li>
 					</ul>
 				</div>
 			</div>
@@ -101,7 +101,7 @@ gtag('config', 'UA-121564625-1');
 			<div class="cs">
 				<h2>고객센터</h2>
 				<div class="phone">
-					<img ng-src="{{image.host}}/img/main/icon_cs.png" alt="" />
+					<img data-ng-src="{{image.host}}/img/main/icon_cs.png" alt="" />
 					<p class="title">대표전화</p>
 					<p>070-4111-0114</p>
 					<p class="title">휴대전화</p>
@@ -109,12 +109,12 @@ gtag('config', 'UA-121564625-1');
 				</div>
 				<h2>계좌안내</h2>
 				<div class="online">
-					<img ng-src="{{image.host}}/img/main/icon_shinhan.png" alt="" />
+					<img data-ng-src="{{image.host}}/img/main/icon_shinhan.png" alt="" />
 					<p class="title">신한은행 (강진희)</p>
 					<p>110-293-148185</p>
 				</div>
 				<!-- <div class="online">
-					<img ng-src="{{image.host}}/img/main/icon_nh.png" alt="" />
+					<img data-ng-src="{{image.host}}/img/main/icon_nh.png" alt="" />
 					<p class="title">농협 ()</p>
 					<p>110-293-148185</p>
 				</div> -->

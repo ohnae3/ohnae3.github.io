@@ -21,17 +21,17 @@
     			strHtml = ''+
     		    '<div class="wrap">'+
 	    			'<div class="head">'+
-		    		    '<span class="prev" ng-click="'+model.start+'.datePrev()" ng-show="('+model.start+'.date | date:\'MM\') > ('+model.todayMonth +')">Prev</span>'+
-		    		    '<span class="next" ng-click="'+model.start+'.dateNext()" ng-hide="('+model.start+'.date | date:\'MM\') == (12)">Next</span>'+
+		    		    '<span class="prev" data-ng-click="'+model.start+'.datePrev()" data-ng-show="('+model.start+'.date | date:\'MM\') > ('+model.todayMonth +')">Prev</span>'+
+		    		    '<span class="next" data-ng-click="'+model.start+'.dateNext()" data-ng-hide="('+model.start+'.date | date:\'MM\') == (12)">Next</span>'+
 		    		    '<h5>'+
-			    		    '<strong ng-bind="'+model.start+'.date | date:\'yyyy\'"></strong> 년 '+
-			    		    '<strong ng-bind="'+model.start+'.date | date:\'MM\'"></strong> 월'+
+			    		    '<strong data-ng-bind="'+model.start+'.date | date:\'yyyy\'"></strong> 년 '+
+			    		    '<strong data-ng-bind="'+model.start+'.date | date:\'MM\'"></strong> 월'+
 		    		    '</h5>'+
 	    		    '</div>'+
 	    		    '<div class="calendar">'+
-		    		    '<div class="week" ng-repeat="val in '+model.start+'.dateHead" ng-class="{sun:($index == 0)}">{{val}}</div>'+
-		    		    '<div ng-class="{day:i > 0}" ng-repeat="i in '+model.start+'.day">'+
-		    		    	'<span ng-class="{on:(i == '+model.start+'.selectIdx),off:(('+model.start+'.date | date:\'yyyyMM\')+getAddZero(i) < (20180312))}" ng-click="'+model.start+'.pick(i,'+model.start+'.date,'+model.end+'.date)" ng-if="i > 0"><strong>{{i}}</strong></span>'+
+		    		    '<div class="week" data-ng-repeat="val in '+model.start+'.dateHead" data-ng-class="{sun:($index == 0)}">{{val}}</div>'+
+		    		    '<div data-ng-class="{day:i > 0}" data-ng-repeat="i in '+model.start+'.day">'+
+		    		    	'<span data-ng-class="{on:(i == '+model.start+'.selectIdx),off:(('+model.start+'.date | date:\'yyyyMM\')+getAddZero(i) < (20180312))}" data-ng-click="'+model.start+'.pick(i,'+model.start+'.date,'+model.end+'.date)" data-ng-if="i > 0"><strong>{{i}}</strong></span>'+
 		    		    '</div>'+
 	    		    '</div>'+
     		    '</div>';

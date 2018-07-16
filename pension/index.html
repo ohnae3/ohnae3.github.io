@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kor" ng-app="KaisaApp" ng-controller="KaisaController">
+<html lang="kor" data-ng-app="KaisaApp" data-ng-controller="KaisaController">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,9 +38,9 @@ gtag('config', 'UA-121564625-1');
 <script src="/js/min/kaisa.js"></script>
 <script src="/js/controller/pension/pension.js"></script>
 </head>
-<body ng-controller="BodyController">
+<body data-ng-controller="BodyController">
 <p class="keywords">가평수상레저,모비딕수상레저,가평수상레져,모비딕수상레져,가평수상스키,가평웨이크보드,가평 수상레저,모비딕 수상레저,가평 수상레져,모비딕 수상레져,가평 수상스키,가평 웨이크보드,수상레저,수상레져,수상스키,웨이크보드</p>
-<div id="container" ng-class="{scroll_100 : window.scrollTop >= 100, scroll_150 : window.scrollTop >= 150, on : loading.first}">
+<div id="container" data-ng-class="{scroll_100 : window.scrollTop >= 100, scroll_150 : window.scrollTop >= 150, on : loading.first}">
 
 	<div kaisa-header></div>
 	<div kaisa-menu></div>
@@ -50,19 +50,19 @@ gtag('config', 'UA-121564625-1');
 			
 			<div class="tab">
 				<ul>
-					<li ng-repeat="i in pensionList" ng-click="pension.clickRoom($index)" ng-class="{on : $index == pension.roomIdx}">{{i.title}}</li>
+					<li data-ng-repeat="i in pensionList" data-ng-click="pension.clickRoom($index)" data-ng-class="{on : $index == pension.roomIdx}">{{i.title}}</li>
 				</ul>
 			</div>
-			<div id="visual" ng-mouseover="pensionIntervalStop()" ng-mouseout="pensionIntervalStart()">
+			<div id="visual" data-ng-mouseover="pensionIntervalStop()" data-ng-mouseout="pensionIntervalStart()">
 				<div class="slide">
-					<button type="button" class="btn_prev" ng-click="pension.prev()"></button>
-					<button type="button" class="btn_next" ng-click="pension.next()"></button>
+					<button type="button" class="btn_prev" data-ng-click="pension.prev()"></button>
+					<button type="button" class="btn_next" data-ng-click="pension.next()"></button>
 					<ul>
-						<li ng-repeat="i in pensionList[pension.roomIdx].img" ng-show="$index == pension.idx"><img ng-src="{{image.host}}{{pensionList[pension.roomIdx].root}}{{i}}" loader="true" alt="" /></li>
+						<li data-ng-repeat="i in pensionList[pension.roomIdx].img" data-ng-show="$index == pension.idx"><img data-ng-src="{{image.host}}{{pensionList[pension.roomIdx].root}}{{i}}" loader="true" alt="" /></li>
 					</ul>
 				</div>
 				<ol class="slide_page">
-					<li ng-repeat="i in pensionList[pension.roomIdx].img" ng-click="pension.click($index)" ng-class="{on : $index == pension.idx}"><img ng-src="{{image.host}}{{pensionList[pension.roomIdx].root}}{{i}}" alt="" /></li>
+					<li data-ng-repeat="i in pensionList[pension.roomIdx].img" data-ng-click="pension.click($index)" data-ng-class="{on : $index == pension.idx}"><img data-ng-src="{{image.host}}{{pensionList[pension.roomIdx].root}}{{i}}" alt="" /></li>
 				</ol>
 			</div>
 
@@ -245,7 +245,7 @@ gtag('config', 'UA-121564625-1');
 			</p>
 			
 			<p class="map">
-				<img ng-src="{{image.host}}/img/pension/map.jpg" style="width:100%; max-width:696px;" alt="">
+				<img data-ng-src="{{image.host}}/img/pension/map.jpg" style="width:100%; max-width:696px;" alt="">
 			</p>
 			
 			<p style="font-size:13px; padding:30px 0; text-align:center; line-height:23px;">

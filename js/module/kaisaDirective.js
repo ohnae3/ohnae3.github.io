@@ -6,10 +6,10 @@
 	app.directive('kaisaHeader',[function(){
 		return {
 			template: '<div>'+
-				'<div id="nav" ng-click="window.nav()"></div>'+
+				'<div id="nav" data-ng-click="window.nav()"></div>'+
 				'<div id="header">'+
 					'<div class="wrap">'+
-						'<h1><a href="/"><img ng-src="{{image.host}}/img/common/logo.png" alt=""></a></h1>'+
+						'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo.png" alt=""></a></h1>'+
 					'</div>'+
 				'</div>'+
 			'</div>',
@@ -25,7 +25,7 @@
 				'<div class="menu_wrap">'+
 					'<div class="wrap">'+
 						'<ul>'+
-							'<li ng-repeat="i in menu" ng-class="{on : page.idx == $index}"><a ng-href="{{commonLink({url:i.url,href:true})}}"><span>{{i.title}}</span><strong>{{i.title}}</strong></a></li>'+
+							'<li data-ng-repeat="i in menu" data-ng-class="{on : page.idx == $index}"><a data-ng-href="{{commonLink({url:i.url,href:true})}}"><span>{{i.title}}</span><strong>{{i.title}}</strong></a></li>'+
 						'</ul>'+
 					'</div>'+
 				'</div>'+
@@ -75,7 +75,7 @@
 		return {
 			template: '<div id="footer">'+
 				'<div class="wrap">'+
-					'<h1><a href="/"><img ng-src="{{image.host}}/img/common/logo.png" alt=""></a></h1>'+
+					'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo.png" alt=""></a></h1>'+
 					'<p>'+
 					'대표전화: 070-4111-0114, 휴대전화: 010-2435-9732<br>'+
 					'주소: 경기도 가평군 가평읍 금대리 305-6 모비딕수상레저 ,<br>'+

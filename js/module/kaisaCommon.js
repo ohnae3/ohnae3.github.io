@@ -162,10 +162,10 @@
 		 * @param param : {
 		 *     url : kaisaUrl 에 있는 링크값과 매치해야 한다.
 		 *     query : object 로 파라메터(쿼리스트링)를 받는다.
-		 *     href : ng-href 를 사용할때 링크를 리턴해준다.
+		 *     href : data-ng-href 를 사용할때 링크를 리턴해준다.
 		 *     reset : 공통 파라메터를 지운다. (TODO storage 제거)
 		 * }
-		 * @return ng-href & ng-click
+		 * @return data-ng-href & data-ng-click
 		 */
 		$scope.commonLink = function(o){
 			if(typeof kaisaUrl[o.url] == 'undefined'){ //잘못 된 링크는 화면 console 에 알려준다.
