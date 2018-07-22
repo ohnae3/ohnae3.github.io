@@ -3,11 +3,11 @@
 #container h2 {font-size:14px; height:auto; border:1px solid #ddd; background:#eee; line-height:30px; padding:20px; text-align:center; line-height:23px; margin-top:20px;}
 #container h2:before {display:none;}
 
-#container h3 {font-size:14px; color:#333; line-height:20px; padding:5px 20px 0 20px; text-align:center; line-height:23px; margin-top:30px;}
+#container h3 {font-size:14px; color:#333; line-height:20px; padding:5px 20px 0 20px; text-align:center; line-height:23px; margin-top:20px;}
 #container h3:before {display:none;}
 
 p.img {text-align:center;}
-p.link {text-align:center; padding-bottom:20px;}
+p.link {text-align:center; padding-bottom:10px;}
 p.link a {color:#ff5500;}
 
 .box {width:33.3%; float:left; padding:10px;}
