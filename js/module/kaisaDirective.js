@@ -1,8 +1,8 @@
 (function(window, angular, undefined){
 	'use strict';
 	var app = angular.module('directive',['common']);
-	
-	
+
+
 	app.directive('kaisaHeader',[function(){
 		return {
 			template: '<div>'+
@@ -18,7 +18,7 @@
 			}
 		}
 	}]);
-	
+
 	app.directive('kaisaMenu',[function(){
 		return {
 			template: '<div id="menu">'+
@@ -35,8 +35,8 @@
 			}
 		}
 	}]);
-	
-	app.directive('kaisaMap',[function(){
+
+	app.directive('kaisaMap',['$timeout',function($timeout){
 		return {
 			template: '<div id="contactUs">'+
 				'<div class="wrap">'+
@@ -51,22 +51,24 @@
 			'</div>',
 			replace: true,
 			link: function($scope, el, attrs){
-				window.initMap = function(){
-					var uluru = {
-						lat : 37.774083,
-						lng : 127.535045
-					};
-					var map = new google.maps.Map(document.getElementById('map'), {
-						zoom : 15,
-						gestureHandling: 'cooperative',
-						center : uluru
-					});
-					var marker = new google.maps.Marker({
-						position : uluru,
-						map : map
-					});
-				}
-				angular.element(el).append('<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHJZ33ORPXZyNOAz7M6HKBPjHTZ8n6CLs&callback=initMap"></script>');
+				$timeout(function(){
+					window.initMap = function(){
+						var uluru = {
+							lat : 37.774083,
+							lng : 127.535045
+						};
+						var map = new google.maps.Map(document.getElementById('map'), {
+							zoom : 15,
+							gestureHandling: 'cooperative',
+							center : uluru
+						});
+						var marker = new google.maps.Marker({
+							position : uluru,
+							map : map
+						});
+					}
+					angular.element(el).append('<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk-HkVIpP_6oUhCU1-zTWzTSHxGksIA8o&callback=initMap"></script>');
+				},10);
 			}
 		}
 	}]);
@@ -90,7 +92,7 @@
 			}
 		}
 	}]);
-	
+
 	app.directive('onlyNumber',['kaisaRegex',function(kaisaRegex){ //only-number="false" => '.-'
 	    return {
 	    	require: 'ngModel',
