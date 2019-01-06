@@ -47,7 +47,7 @@ gtag('config', 'UA-121564625-1');
 
 	<div id="contents">
 		<div class="wrap">
-		
+
 			<div id="visual">
 				<div class="slide" data-ng-mouseover="visualIntervalStop()" data-ng-mouseout="visualIntervalStart()">
 					<button type="button" class="btn_prev" data-ng-click="visual.prev()"></button>
@@ -57,7 +57,7 @@ gtag('config', 'UA-121564625-1');
 					</ul>
 				</div>
 			</div>
-			
+
 			<div class="kakaoBanner">
 				<a target="blank" href="http://pf.kakao.com/_xoxjrNC/chat"><img data-ng-src="{{image.host}}/img/main/kakao_txt.png" class="txt" alt="" /></a>
 				<img data-ng-src="{{image.host}}/img/main/kakao_phone.png" class="phone" alt="" />
@@ -65,7 +65,7 @@ gtag('config', 'UA-121564625-1');
 				<a target="blank" href="http://pf.kakao.com/_xoxjrNC/chat" class="go">GO</a>
 			</div>
 			<p class="kakaoGuide">카카오톡 실행 후 상단 검색창에 "<strong>@모비딕수상레저</strong>"를 입력하세요.</p>
-			
+
 			<div class="play" data-ng-if="window.width >= 770">
 				<h2>놀이기구 <span class="more"><a href="/info/">더보기</a></span></h2>
 				<div class="slide" data-ng-mouseover="playIntervalStop()" data-ng-mouseout="playIntervalStart()">
@@ -75,7 +75,7 @@ gtag('config', 'UA-121564625-1');
 						<li data-ng-repeat="i in playList" data-ng-show="$index == play.idx"><img data-ng-src="{{image.host}}{{i.url}}" alt="" /></li>
 					</ul>
 				</div>
-			</div>		
+			</div>
 			<div class="fac" data-ng-if="window.width >= 770">
 				<h2>주변시설 <span class="more"><a href="/info/">더보기</a></span></h2>
 				<div class="slide" data-ng-mouseover="facIntervalStop()" data-ng-mouseout="facIntervalStart()">
@@ -106,29 +106,31 @@ gtag('config', 'UA-121564625-1');
 				<!-- <div class="iframe_wrap"><iframe src="https://www.youtube.com/embed/BpYuxrz5TDA" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
 				<div class="iframe_wrap"><iframe src="https://www.youtube.com/embed/KtBZZ2nB-8I" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 			</div>
-			
+
 			<div class="cs">
 				<h2>고객센터</h2>
 				<div class="phone">
 					<img data-ng-src="{{image.host}}/img/main/icon_cs.png" alt="" />
 					<p class="title">대표전화</p>
-					<p>070-4111-0114</p>
+					<p>070-8811-5222</p>
 					<p class="title">휴대전화</p>
-					<p>010-2435-9732</p>
+					<p>010-3579-5222</p>
 				</div>
 				<h2>계좌안내</h2>
 				<div class="online">
-					<img data-ng-src="{{image.host}}/img/main/icon_hana.png" alt="" />
-					<p class="title">하나은행 (이유상)</p>
-					<p>465-910001-40207</p>
+					<!-- <img data-ng-src="{{image.host}}/img/main/icon_hana.png" alt="" /> -->
+					<!-- <img data-ng-src="{{image.host}}/img/main/icon_shinhan.png" alt="" /> -->
+					<img data-ng-src="{{image.host}}/img/main/icon_nh.png" alt="" />
+					<p class="title">농협 (장순희)</p>
+					<p>921-010208-01-011</p>
 				</div>
 			</div>
 		</div>
-	</div>	
-	
+	</div>
+
 	<div kaisa-map></div>
 	<div kaisa-footer></div>
-	
+
 </div>
 </body>
 </html>
