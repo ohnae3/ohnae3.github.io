@@ -79,7 +79,7 @@
 				'<div class="wrap">'+
 					'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo.png" alt=""></a></h1>'+
 					'<p>'+
-					'대표전화: 070-8811-5222, 휴대전화: 010-3579-5222<br>'+
+					'휴대전화: 010-3579-5222<br>'+
 					'주소: 경기도 가평군 가평읍 금대리 305-6 모비딕수상레저 ,<br>'+
 					'도로명: 경기도 가평군 가평읍 북한강변로 536 모비딕수상레저<br>'+
 					'Email: <a href="mailto:7083620@hanmail.net">7083620@hanmail.net</a><br>'+
