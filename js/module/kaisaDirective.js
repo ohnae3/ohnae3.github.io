@@ -79,10 +79,10 @@
 				'<div class="wrap">'+
 					'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo.png" alt=""></a></h1>'+
 					'<p>'+
-					'휴대전화: 010-3579-5222<br>'+
+					'대표전화: 010-5678-2904<br>'+
 					'주소: 경기도 가평군 가평읍 금대리 305-6 모비딕수상레저 ,<br>'+
 					'도로명: 경기도 가평군 가평읍 북한강변로 536 모비딕수상레저<br>'+
-					'Email: <a href="mailto:7083620@hanmail.net">7083620@hanmail.net</a><br>'+
+					'Email: <a href="mailto:cwhkorea@naver.com">cwhkorea@naver.com</a><br>'+
 					'Copyright © 2017 Mobydick. All Rights Reserved<a href="http://admin.mobydic.co.kr/bbs/login.php?url=http%3A%2F%2Fmobydic.co.kr" target="_blank">.</a>'+
 					'</p>'+
 				'</div>'+

@@ -372,5 +372,13 @@
 				$scope.window.scrollTop = angular.element($window).scrollTop();
 			});
 		});
+		$scope.cs = {
+			bankNm : '농협 (최원호)',
+			bankNo : '301-0215-2956-21',
+			telNm1 : '대표전호',
+			telNo1 : '010-5679-2904',
+			telNm2 : '',
+			telNo2 : '',
+		};
 	}]);
 })(window,window.angular);
