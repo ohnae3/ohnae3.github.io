@@ -375,7 +375,7 @@
 		$scope.cs = {
 			bankNm : '농협 (최원호)',
 			bankNo : '301-0215-2956-21',
-			telNm1 : '대표전호',
+			telNm1 : '대표전화',
 			telNo1 : '010-5679-2904',
 			telNm2 : '',
 			telNo2 : '',
