@@ -12,3 +12,5 @@ git push -u --force origin master
 
 git auth
 Secure Storage -> Content
+
+master protected 를 풀자
