@@ -111,10 +111,10 @@ gtag('config', 'UA-121564625-1');
 				<h2>고객센터</h2>
 				<div class="phone">
 					<img data-ng-src="{{image.host}}/img/main/icon_cs.png" alt="" />
-					<p class="title">{{cs.telNm1}}</p>
+					<p class="title" style="padding-top:60px;">{{cs.telNm1}}</p>
 					<p>{{cs.telNo1}}</p>
-					<p class="title" data-ng-if="cs.telNo2">{{cs.telNo2}}</p>
-					<p data-ng-if="cs.telNm2">{{cs.telNm2}}</p>
+					<p class="title" data-ng-show="cs.telNo2">{{cs.telNo2}}</p>
+					<p data-ng-show="cs.telNm2">{{cs.telNm2}}</p>
 				</div>
 				<h2>계좌안내</h2>
 				<div class="online">
