@@ -84,9 +84,9 @@
 	app.controller('KaisaController',['$rootScope', 'commonParam' ,'$window','$scope','$location','$compile','$http','$timeout','kaisaUrl','kaisaParam','constant','kaisaApi','kaisaStorage','$httpParamSerializerJQLike',
 	                          function($rootScope ,  commonParam  , $window , $scope , $location , $compile , $http , $timeout , kaisaUrl , kaisaParam , constant , kaisaApi , kaisaStorage , $httpParamSerializerJQLike){
 
-		if(location.protocol == 'https:'){
+		/*if(location.protocol == 'https:'){
 			location.href = 'http://' + location.hostname + location.pathname + location.search; //ssl 사용페이지 없음
-		}
+		}*/
 
 		$scope.jsonpParam = function(param){
 			return '?callback=JSON_CALLBACK&' + $httpParamSerializerJQLike(param); //jsonp 는 param 을  object 로 담을 수 없다
