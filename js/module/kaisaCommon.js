@@ -152,8 +152,8 @@
 		};
 		$scope.menu = [
 			{title:'모비딕', url:'main'},
-			{title:'예약게시판', url:'reservation'},
-			{title:'1:1문의', url:'qna'},
+			/*{title:'예약게시판', url:'reservation'},
+			{title:'1:1문의', url:'qna'},*/
 			{title:'요금안내', url:'info'},
 			{title:'펜션안내', url:'pension'},
 			{title:'근처펜션', url:'nearPension'}
