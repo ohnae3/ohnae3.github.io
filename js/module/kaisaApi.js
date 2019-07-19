@@ -3,7 +3,7 @@
 	var app = angular.module('api', ['baseConstant']);
 
 	app.service('kaisaApi', ['constant',function(constant) {
-		var apiUrl = location.protocol + '//' + 'admin.mobydi.co.kr',
+		var apiUrl = location.protocol + '//' + 'ohnae3.cafe24.com',
 			ext = constant.extension.api;
 		
 		this.skiList = apiUrl + '/api/ski/list.php' + ext;
