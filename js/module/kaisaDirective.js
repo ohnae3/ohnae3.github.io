@@ -9,7 +9,7 @@
 				'<div id="nav" data-ng-click="window.nav()"></div>'+
 				'<div id="header">'+
 					'<div class="wrap">'+
-						'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo.png" alt=""></a></h1>'+
+						'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo_edge.png" alt=""></a></h1>'+
 					'</div>'+
 				'</div>'+
 			'</div>',
@@ -77,7 +77,7 @@
 		return {
 			template: '<div id="footer">'+
 				'<div class="wrap">'+
-					'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo.png" alt=""></a></h1>'+
+					'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo_edge.png" alt=""></a></h1>'+
 					'<p>'+
 					'대표전화: 010-3579-5222<br>'+
 					'주소: 경기도 가평군 가평읍 금대리 305-6 엣지수상레저 ,<br>'+
