@@ -3,19 +3,19 @@
 	var app = angular.module('KaisaApp',['common']);
 
 	app.controller('BodyController',['$scope','$window','$timeout','$interval',function($scope,$window,$timeout,$interval){
-		
+
 		$scope.page = {
-			idx : 0	
+			idx : 0
 		};
-		
+
 		//메인비주얼
 		$scope.visualList = [
 			{url : '/img/main/visual3.jpg'},
 			/*{url : '/img/main/visual1.jpg'},*/
 			{url : '/img/main/visual4.jpg'},
-			{url : '/img/main/visual5.jpg'},
-			{url : '/img/main/visual2.jpg'}
-			
+			//{url : '/img/main/visual5.jpg'},
+			//{url : '/img/main/visual2.jpg'}
+
 		];
 		$scope.visual = {
 			idx : 0,
@@ -34,7 +34,7 @@
 			$interval.cancel($scope.visualInterval);
 		};
 		$scope.visualIntervalStart();
-		
+
 		//놀이기구
 		$scope.playList = [
 			{url : '/img/play/play25.png'},
@@ -63,7 +63,7 @@
 			{url : '/img/play/play9.png'},
 			{url : '/img/play/play10.png'},
 			{url : '/img/play/play11.png'},
-			{url : '/img/play/play12.png'}			
+			{url : '/img/play/play12.png'}
 		];
 		$scope.play = {
 			idx : 0,
@@ -82,7 +82,7 @@
 			$interval.cancel($scope.playInterval);
 		};
 		$scope.playIntervalStart();
-		
+
 		//주변시설
 		$scope.facList = [
 			{url : '/img/fac/fac12.png'},
@@ -90,11 +90,11 @@
 			{url : '/img/fac/fac10.png'},
 			{url : '/img/fac/fac0.png'},
 			{url : '/img/fac/fac9.png'},
-			{url : '/img/fac/fac1.png'},
+			//{url : '/img/fac/fac1.png'},
 			{url : '/img/fac/fac2.png'},
 			{url : '/img/fac/fac3.png'},
-			{url : '/img/fac/fac4.png'},
-			{url : '/img/fac/fac5.png'},
+			//{url : '/img/fac/fac4.png'},
+			//{url : '/img/fac/fac5.png'},
 			{url : '/img/fac/fac6.png'},
 			{url : '/img/fac/fac7.png'},
 			{url : '/img/fac/fac8.png'}
@@ -116,6 +116,6 @@
 			$interval.cancel($scope.facInterval);
 		};
 		$scope.facIntervalStart();
-		
+
 	}]);
 })(window,window.angular);
