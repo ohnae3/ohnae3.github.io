@@ -13,9 +13,10 @@
 			{url : '/img/main/visual3.jpg'},
 			/*{url : '/img/main/visual1.jpg'},*/
 			{url : '/img/main/visual4.jpg'},
+			{url : '/img/main/visual21.png'},
+			{url : '/img/main/visual22.png'}
 			//{url : '/img/main/visual5.jpg'},
 			//{url : '/img/main/visual2.jpg'}
-
 		];
 		$scope.visual = {
 			idx : 0,
