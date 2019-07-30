@@ -43,8 +43,8 @@
 					'<h2>찾아오시는 길</h2>'+
 					'<div id="map"></div>'+
 				    '<ul>'+
-					'<li><strong>주소:</strong> 경기도 가평군 가평읍 금대리 305-6 모비딕수상레저</li>'+
-					'<li><strong>도로명:</strong> 경기도 가평군 가평읍 북한강변로 536 모비딕수상레저</li>'+
+					'<li><strong>주소:</strong> 경기도 가평군 가평읍 금대리 305-6 엣지수상레저</li>'+
+					'<li><strong>도로명:</strong> 경기도 가평군 가평읍 북한강변로 536 엣지수상레저</li>'+
 					'<li class="txt_guide"><strong>가평역</strong> 무료 픽업 및 드롭서비스 해드립니다.</li>'+
 					'</ul>'+
 				'</div>'+
@@ -80,8 +80,8 @@
 					'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo.png" alt=""></a></h1>'+
 					'<p>'+
 					'대표전화: 010-3579-5222<br>'+
-					'주소: 경기도 가평군 가평읍 금대리 305-6 모비딕수상레저 ,<br>'+
-					'도로명: 경기도 가평군 가평읍 북한강변로 536 모비딕수상레저<br>'+
+					'주소: 경기도 가평군 가평읍 금대리 305-6 엣지수상레저 ,<br>'+
+					'도로명: 경기도 가평군 가평읍 북한강변로 536 엣지수상레저<br>'+
 					'Email: <a href="mailto:cwhkorea@naver.com">cwhkorea@naver.com</a><br>'+
 					'Copyright © 2017 Mobydick. All Rights Reserved<a href="http://ohnae3.cafe24.com/bbs/login.php?url=http%3A%2F%2Fmobydi.co.kr" target="_blank">.</a>'+
 					'</p>'+

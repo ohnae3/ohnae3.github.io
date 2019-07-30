@@ -151,7 +151,7 @@
 			return '?callback=JSON_CALLBACK&' + $httpParamSerializerJQLike(param); //jsonp 는 param 을  object 로 담을 수 없다
 		};
 		$scope.menu = [
-			{title:'모비딕', url:'main'},
+			{title:'엣지', url:'main'},
 			{title:'예약게시판', url:'reservation'},
 			{title:'1:1문의', url:'qna'},
 			{title:'요금안내', url:'info'},

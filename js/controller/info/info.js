@@ -3,7 +3,7 @@
 	var app = angular.module('KaisaApp',['common']);
 
 	app.controller('BodyController',['$scope','$window','$timeout','$interval',function($scope,$window,$timeout,$interval){
-		
+
 		$scope.page = {
 				idx : 3
 			};
@@ -11,106 +11,79 @@
 		//물놀이기구
 		$scope.policy = [
 			{
-				url : '/img/play/play18.png',
-				category : '물놀이기구',
-				title : '2종+제트보트',
+				url : '/img/play/play8.png',
+				category : '제트보트',
+				title : '무제한+제트보트',
+				desc : '',
+				normalPrice : '',
+				salePrice : '45,000',
+				discountRate : ''
+			},
+			{
+				url : '/img/play/play9.png',
+				category : '',
+				title : '3시간 무제한+제트보트',
 				desc : '',
 				normalPrice : '',
 				salePrice : '35,000',
 				discountRate : ''
 			},
 			{
-				url : '/img/play/play6.png',
-				category : '물놀이기구',
-				title : '3종',
+				url : '/img/play/play10.png',
+				category : '',
+				title : '4시간 무제한+제트보트',
+				desc : '',
+				normalPrice : '',
+				salePrice : '40,000',
+				discountRate : ''
+			},
+			{
+				url : '/img/play/play4.png',
+				category : '',
+				title : '종일 무제한',
+				desc : '',
+				normalPrice : '',
+				salePrice : '39,000',
+				discountRate : ''
+			},
+			{
+				url : '/img/play/play20.png',
+				category : '',
+				title : '3시간 무제한',
 				desc : '',
 				normalPrice : '',
 				salePrice : '29,000',
 				discountRate : ''
 			},
 			{
-				url : '/img/play/play19.png',
-				category : '물놀이기구',
-				title : '3종 + 제트보트',
-				desc : '',
-				normalPrice : '',
-				salePrice : '45,000',
-				discountRate : ''
-			},
-			{
-				url : '/img/play/play4.png',
-				category : '물놀이기구',
-				title : '5종',
-				desc : '',
-				normalPrice : '',
-				salePrice : '45,000',
-				discountRate : ''
-			},
-			{
-				url : '/img/play/play20.png',
-				category : '물놀이기구',
-				title : '5종 + 제트보트',
-				desc : '',
-				normalPrice : '',
-				salePrice : '59,000',
-				discountRate : ''
-			},
-			{
 				url : '/img/play/play2.png',
-				category : '물놀이기구',
-				title : '무제한놀이기구',
+				category : '',
+				title : '4시간 무제한',
 				desc : '',
 				normalPrice : '',
-				salePrice : '60,000',
+				salePrice : '35,000',
 				discountRate : ''
 			},
 			{
 				url : '/img/play/play14.png',
-				category : '제트보트',
-				title : '남이섬 일주',
+				category : '',
+				title : '5종(보장형)+제트',
 				desc : '',
 				normalPrice : '',
-				salePrice : '1인 25,000',
+				salePrice : '42,000',
 				discountRate : ''
 			},
 			{
 				url : '/img/play/play7.png',
-				category : '제트보트',
-				title : '남이섬 + 자라섬 일주',
+				category : '',
+				title : '4종(보장형)+제트',
 				desc : '',
 				normalPrice : '',
-				salePrice : '1인 45,000',
-				discountRate : ''
-			},
-			{
-				url : '/img/play/play8.png',
-				category : '모터보트',
-				title : '남이섬 일주',
-				desc : '',
-				normalPrice : '',
-				salePrice : '50,000',
-				discountRate : ''
-			},
-			{
-				url : '/img/play/play9.png',
-				category : '모터보트',
-				title : '남이섬 + 자라섬 일주',
-				desc : '',
-				normalPrice : '',
-				salePrice : '70,000',
-				discountRate : ''
-			},
-			{
-				url : '/img/play/play10.png',
-				category : '제트보트+놀이기구',
-				title : '무제한놀이기구 + 제트보트',
-				desc : '',
-				normalPrice : '',
-				salePrice : '70,000',
+				salePrice : '37,000',
 				discountRate : ''
 			}
 		];
-		
+
 		//놀이기구
 		$scope.playList = [
 			{url : '/img/play/play25.png'},
@@ -145,7 +118,7 @@
 			prev : function(){(0 < this.idx) ? this.idx-- : this.idx = this.total - 1;},
 			next : function(){(this.total > this.idx + 1) ? this.idx++ : this.idx = 0;}
 		};
-		
+
 		//주변시설
 		$scope.facList = [
 			{url : '/img/fac/fac12.png'},
@@ -167,6 +140,6 @@
 			prev : function(){(0 < this.idx) ? this.idx-- : this.idx = this.total - 1;},
 			next : function(){(this.total > this.idx + 1) ? this.idx++ : this.idx = 0;}
 		};
-		
+
 	}]);
 })(window,window.angular);
