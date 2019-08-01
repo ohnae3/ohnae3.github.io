@@ -8,7 +8,8 @@
 				idx : 3
 			};
 
-		//물놀이기구
+
+
 		/**
 		 * 무제한+제트보트 45,000
 		 * 3시간 무제한+제트보트 35,000
@@ -18,6 +19,11 @@
 		 * 4시간 무제한 35,000
 		 * 5종(보장형)+제트 42,000
 		 * 5종(보장형)+제트 37,000
+		 * 제트보트 남이섬일주 15,000
+		 * 초보강습 지상교육2회 라이딩2회 50,000
+		 * 수상스키 웨이크보드 20,000
+		 * 무제한 바베큐 1인 20,000
+		 * 닭갈비 1인분 9,000
 		 */
 		$scope.policy = [
 			{
@@ -90,6 +96,51 @@
 				desc : '',
 				normalPrice : '',
 				salePrice : '37,000',
+				discountRate : ''
+			},
+			{
+				url : '/img/play/play14.png',
+				category : '',
+				title : '제트보트 남이섬일주',
+				desc : '',
+				normalPrice : '',
+				salePrice : '15,000',
+				discountRate : ''
+			},
+			{
+				url : '/img/play/play9.png',
+				category : '',
+				title : '초보강습 지상교육2회 라이딩2회',
+				desc : '',
+				normalPrice : '',
+				salePrice : '50,000',
+				discountRate : ''
+			},
+			{
+				url : '/img/play/play1.png',
+				category : '',
+				title : '수상스키 웨이크보드',
+				desc : '',
+				normalPrice : '',
+				salePrice : '20,000',
+				discountRate : ''
+			},
+			{
+				url : '/img/play/play4.png',
+				category : '',
+				title : '무제한 바베큐 1인',
+				desc : '',
+				normalPrice : '',
+				salePrice : '20,000',
+				discountRate : ''
+			},
+			{
+				url : '/img/play/play5.png',
+				category : '',
+				title : '닭갈비 1인분',
+				desc : '',
+				normalPrice : '',
+				salePrice : '9,000',
 				discountRate : ''
 			}
 		];
