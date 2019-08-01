@@ -5,7 +5,8 @@
 	app.controller('BodyController',['$scope','$window','$timeout','$interval',function($scope,$window,$timeout,$interval){
 
 		$scope.page = {
-			idx : 0
+			idx : 0,
+			popup : true
 		};
 
 		//메인비주얼
