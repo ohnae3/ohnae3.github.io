@@ -28,8 +28,8 @@
 		$scope.policy = [
 			{
 				url : '/img/play/play8.png',
-				category : '제트보트',
-				title : '무제한+제트보트',
+				category : '',
+				title : '종일 무제한+제트보트',
 				desc : '',
 				normalPrice : '',
 				salePrice : '45,000',
