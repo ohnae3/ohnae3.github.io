@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/ohnae3/ohnae3.github.io#readme",
   "dependencies": {
-    "express": "^4.16.2",
     "del": "^2.2.2",
+    "express": "^4.17.1",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.0.4",
+    "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.2.0",
