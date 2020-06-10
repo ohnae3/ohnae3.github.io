@@ -5,10 +5,8 @@
 	app.controller('BodyController',['$scope','$window','$timeout','$interval',function($scope,$window,$timeout,$interval){
 
 		$scope.page = {
-				idx : 3
-			};
-
-
+			idx : 2
+		};
 
 		/**
 		 * 무제한+제트보트 45,000

@@ -5,7 +5,7 @@
 	app.controller('BodyController',['$scope','$window','$timeout','$interval',function($scope,$window,$timeout,$interval){
 		
 		$scope.page = {
-			idx : 4
+			idx : 3
 		};
 		
 		//펜션 리스트

@@ -5,7 +5,7 @@
 	app.controller('BodyController',['$scope','$window','$timeout','$interval',function($scope,$window,$timeout,$interval){
 		
 		$scope.page = {
-			idx : 5
+			idx : 4
 		};
 		
 		
