@@ -79,7 +79,7 @@
 				'<div class="wrap">'+
 					'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo_edge.png" alt=""></a></h1>'+
 					'<p>'+
-					'대표전화: 010-8596-9160<br>'+
+					'대표전화: 010-4202-2864<br>'+
 					'주소: 경기도 가평군 가평읍 금대리 305-6 엣지수상레저 ,<br>'+
 					'도로명: 경기도 가평군 가평읍 북한강변로 536 엣지수상레저<br>'+
 					'Email: <a href="mailto:cwhkorea@naver.com">cwhkorea@naver.com</a><br>'+
