@@ -15,7 +15,7 @@
 			domain : '',
 			image : {
 				noImage : '/img/common/noImage.png',
-				host : '', //location.protocol + '//' + 'kaisa.co.kr' ,
+				host : '', //location.protocol + '//' + 'kaisa.co.kr' , //http://gi.esmplus.com/ohnae2/mobydic
 				XL : '_1040',
 				L : '_256',
 				M : '_130',
