@@ -74,7 +74,7 @@
 			},
 			{
 				url : '/img/play/play5.png',
-				title : '무제한바베큐', salePrice : '29000'			
+				title : '무제한바베큐', salePrice : '20000'			
 			}
 		];
 
