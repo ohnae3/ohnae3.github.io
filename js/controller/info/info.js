@@ -83,6 +83,7 @@
 			{url : '/img/play/play25.png'},
 			{url : '/img/play/play22.png'},
 			{url : '/img/play/play23.png'},
+			{url : '/img/play/play26.png'},
 			{url : '/img/play/play24.png'},
 			{url : '/img/play/play1.png'},
 			{url : '/img/play/play2.png'},
@@ -102,8 +103,8 @@
 			{url : '/img/play/play16.png'},
 			{url : '/img/play/play17.png'},
 			{url : '/img/play/play18.png'},
-			{url : '/img/play/play19.png'},
-			{url : '/img/play/play20.png'}
+			{url : '/img/play/play19.png'}
+			//{url : '/img/play/play20.png'}
 		];
 		$scope.play = {
 			idx : 0,
@@ -118,12 +119,13 @@
 			{url : '/img/fac/fac12.png'},
 			{url : '/img/fac/fac10.png'},
 			{url : '/img/fac/fac11.png'},
-			//{url : '/img/fac/fac1.png'},
+			{url : '/img/fac/fac1.png'},
 			{url : '/img/fac/fac2.png'},
 			{url : '/img/fac/fac3.png'},
-			//{url : '/img/fac/fac4.png'},
-			//{url : '/img/fac/fac5.png'},
+			{url : '/img/fac/fac4.png'},
+			{url : '/img/fac/fac5.png'},
 			{url : '/img/fac/fac6.png'},
+			{url : '/img/fac/fac13.png'},
 			{url : '/img/fac/fac7.png'},
 			{url : '/img/fac/fac8.png'}
 		];
