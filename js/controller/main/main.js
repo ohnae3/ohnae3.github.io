@@ -13,6 +13,8 @@
 		$scope.visualList = [
 			{url : '/img/main/visual3.jpg'},
 			//{url : '/img/main/visual1.jpg'},
+			//{url : '/img/main/visual6.jpg'},
+			{url : '/img/main/visual7.jpg'},
 			{url : '/img/main/visual4.jpg'}
 			//{url : '/img/main/visual21.png'},
 			//{url : '/img/main/visual22.png'}

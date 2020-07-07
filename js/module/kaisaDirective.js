@@ -7,9 +7,9 @@
 		return {
 			template: '<div>'+
 				'<div id="nav" data-ng-click="window.nav()"></div>'+
-				'<div id="header">'+
+				'<div id="header" class="{{constant.title}}">'+
 					'<div class="wrap">'+
-						'<h1><a href="/"><img data-ng-src="{{image.host}}//img/common/logo_edge.png" alt=""></a></h1>'+
+						'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo_{{constant.title}}.png" alt=""></a></h1>'+
 					'</div>'+
 				'</div>'+
 			'</div>',
@@ -21,7 +21,7 @@
 
 	app.directive('kaisaMenu',[function(){
 		return {
-			template: '<div id="menu">'+
+			template: '<div id="menu" data-ng-class="{fix : window.scrollTop >= 100}">'+
 				'<div class="menu_wrap">'+
 					'<div class="wrap">'+
 						'<ul>'+
@@ -43,8 +43,8 @@
 					'<h2>찾아오시는 길</h2>'+
 					'<div id="map"></div>'+
 				    '<ul>'+
-					'<li><strong>주소:</strong> 경기도 가평군 가평읍 금대리 305-6 엣지수상레저</li>'+
-					'<li><strong>도로명:</strong> 경기도 가평군 가평읍 북한강변로 536 엣지수상레저</li>'+
+					'<li><strong>주소:</strong> 경기도 가평군 가평읍 금대리 305-6 {{constant.titleName}}수상레저</li>'+
+					'<li><strong>도로명:</strong> 경기도 가평군 가평읍 북한강변로 536 {{constant.titleName}}수상레저</li>'+
 					'<li class="txt_guide"><strong>가평역</strong> 무료 픽업 및 드롭서비스 해드립니다.</li>'+
 					'</ul>'+
 				'</div>'+
@@ -77,11 +77,12 @@
 		return {
 			template: '<div id="footer">'+
 				'<div class="wrap">'+
-					'<h1><a href="/"><img data-ng-src="{{image.host}}//img/common/logo_edge.png" alt=""></a></h1>'+
+					'<h1><a href="/"><img data-ng-src="{{image.host}}/img/common/logo_edge.png" alt=""></a></h1>'+
 					'<p>'+
 					'대표전화: 010-4202-2864<br>'+
-					'주소: 경기도 가평군 가평읍 금대리 305-6 엣지수상레저 ,<br>'+
-					'도로명: 경기도 가평군 가평읍 북한강변로 536 엣지수상레저<br>'+
+					'주소: 경기도 가평군 가평읍 금대리 305-6 {{constant.titleName}}수상레저 ,<br>'+
+					'도로명: 경기도 가평군 가평읍 북한강변로 536 {{constant.titleName}}수상레저<br>'+
+					'대표전화: 010-5678-2904 |  현장 운영시간: 09:00~18:30 | 대표자명 : 장성환 |  사업자번호: 452-03-00895<br>'+
 					'Email: <a href="mailto:cwhkorea@naver.com">cwhkorea@naver.com</a><br>'+
 					'Copyright © 2017 Mobydick. All Rights Reserved<a href="http://ohnae3.cafe24.com/bbs/login.php?url=http%3A%2F%2F'+location.host+'" target="_blank">.</a>'+
 					'</p>'+

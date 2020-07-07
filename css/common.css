@@ -53,12 +53,15 @@ body {background:#fff;}
 .scroll_150 #nav {background-position:0 -80px; top:380px;}
 .scroll_150 #nav:hover {background-position:0 -130px;}
 
-#header {width:100%; overflow:hidden; text-align:center; clear:both; background:#fff; padding:50px 5px 20px 5px;}
+#header {width:100%; overflow:hidden; text-align:center; clear:both; padding-top:30px; height:100px}
+#header.edge {background:#fff;}
+#header.mobydic {background:#abcaff;}
 #header h1 {position:relative; display:inline-block;}
 #header h1 img {opacity:1; margin-left:0;}
-#header h1:before {content:''; display:block;position:absolute; left:-20px; top:-2px; width:80px; height:50px; background:url(/img/common/sp.png) no-repeat 0 -300px;}
+/*#header h1:before {content:''; display:block;position:absolute; left:-20px; top:-2px; width:80px; height:50px; background:url(/img/common/sp.png) no-repeat 0 -300px;}*/
 
 #menu {width:100%; overflow:hidden; line-height:50px; background:#fff; height:50px;}
+#menu.fix {position:fixed; left:0; top:0; z-index:100; box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}
 #menu ul {white-space:nowrap; width:100%; text-align:center;}
 #menu ul li {color:#000; display:inline-block; font-weight:bold; font-size:18px; text-shadow:0 0 1px rgba(0,0,0,0.2);}
 #menu ul li a {-webkit-tap-highlight-color:transparent; display:block; color:#000; overflow:hidden; position:relative; padding:0 15px;}
@@ -102,7 +105,7 @@ body {background:#fff;}
 .slide .btn_prev:hover {background-position:0 -40px;}
 .slide .btn_next:hover {background-position:-40px -40px;}
 
-#visual {width:100%; overflow:hidden; clear:both;}
+#visual {width:100%; overflow:hidden; clear:both; border-radius:20px;}
 #visual img {width:100%;}
 #visual:after {content:''; width:80px;}
 #visual .slide .btn_prev {width:60px; height:60px; background-position:0 -180px; margin-top:-30px;}
@@ -110,10 +113,11 @@ body {background:#fff;}
 #visual .slide .btn_prev:hover {background-position:0 -240px;}
 #visual .slide .btn_next:hover {background-position:-60px -240px;}
 
+.space {width:100%; clear:both; height:20px;}
+
 .popupBanner {position:fixed; width:100%; height:100%; left:0; top:0; z-index:100; background:rgba(0,0,0,0.5);}
 .popupBanner div {width:400px; position:absolute; left:50%; top:50%; height:500px; margin:-250px 0 0 -200px;}
 .popupBanner button {border:0; background:none; font-size:0; width:38px; height:40px; position:absolute; right:5px; top:10px;}
-
 
 /*imgLoader*/
 .imgLoader {position:absolute; left:50%; top:50%; margin:-5px 0 0 -35px; width:70px; text-align:center;}

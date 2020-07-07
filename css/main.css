@@ -13,6 +13,13 @@
 .movie {width:740px; float:left; margin-right:20px; height:410px;}
 .movie .iframe_wrap {width:100%; padding-bottom:55%; position:relative;}
 .movie iframe {width:100%; height:100%; position:absolute; left:0; top:0;}
+.movie .img {position:absolute; top:400px;}
+
+.leftWrap {float:left;width:58.3%}
+.rightWrap {float:right; width:40.2%}
+
+.leftWrap img, 
+.rightWrap img {width:100%}
 
 .cs {width:510px; float:left;}
 .cs .phone,
@@ -51,6 +58,9 @@
     .notice li span {display:inline-block;}
     .movie {width:100%; float:none; clear:both; height:auto;}
     .cs {width:100%; float:none; clear:both;}
+
+	.leftWrap {float:none;width:100%}
+	.rightWrap {float:none; width:100%; padding-top:20px;}
 
     .kakaoBanner .txt {right:20px; width:350px;}
     .kakaoBanner .phone {right:20px; width:180px;}

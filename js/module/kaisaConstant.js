@@ -6,8 +6,9 @@
 			dateVersion : $filter('date')(new Date(),'yyyyMMddHHmm').substring(0,11), //10분단위로 클라이언트 캐시 삭제
 			version : '0.0.1', //version 업데이트시 클라이언트 캐시 삭제
 			host : '',
-			dev : (location.host == 'kaisa.co.kr') ? false : true,
-			title     : 'kaisa',
+			dev : (location.host.match('localhost')) ? false : true,
+			title : (location.host.match('mobydic')) ? 'mobydic' : 'edge',
+			titleName : (location.host.match('mobydic')) ? '모비딕' : '엣지',
 			//minRoot : (gulpYn) ? '/min/' : '/', 
 			keywords : 'Mobydic 수상레저',
 			description : 'Mobydic 수상레저',
@@ -15,7 +16,7 @@
 			domain : '',
 			image : {
 				noImage : '/img/common/noImage.png',
-				host : 'http://gi.esmplus.com/ohnae2/mobydic', //location.protocol + '//' + 'kaisa.co.kr' , 
+				host : '', //location.protocol + '//' + 'kaisa.co.kr' , 
 				XL : '_1040',
 				L : '_256',
 				M : '_130',
