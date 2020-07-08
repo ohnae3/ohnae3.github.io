@@ -361,10 +361,11 @@
 		$scope.window = {
 			width : angular.element($window).width(),
 			height : angular.element($window).height(),
+			heightContainer : angular.element('#container').height(),
 			scrollTop : angular.element($window).scrollTop(),
 			nav : function(){
 				if(this.scrollTop <= 150){
-					angular.element('body,html').animate({scrollTop : $scope.window.height });
+					angular.element('body,html').animate({scrollTop : $scope.window.heightContainer });
 				}else{
 					angular.element('body,html').animate({scrollTop : 0});
 				}
