@@ -53,7 +53,7 @@ gtag('config', 'UA-121564625-1');
 					<li data-ng-repeat="i in pensionList" data-ng-click="pension.clickRoom($index)" data-ng-class="{on : $index == pension.roomIdx}">{{i.title}}</li>
 				</ul>
 			</div>
-			<div id="visual" data-ng-mouseover="pensionIntervalStop()" data-ng-mouseout="pensionIntervalStart()">
+			<div id="visualPention" data-ng-mouseover="pensionIntervalStop()" data-ng-mouseout="pensionIntervalStart()">
 				<div class="slide">
 					<button type="button" class="btn_prev" data-ng-click="pension.prev()"></button>
 					<button type="button" class="btn_next" data-ng-click="pension.next()"></button>

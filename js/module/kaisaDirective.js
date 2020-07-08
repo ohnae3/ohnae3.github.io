@@ -23,7 +23,7 @@
 		return {
 			template: '<div id="menu" data-ng-class="{fix : window.scrollTop >= 100}">'+
 				'<div class="menu_wrap">'+
-					'<div class="wrap">'+
+					'<div class="wrap swipeMenuWrap">'+
 						'<ul>'+
 							'<li data-ng-repeat="i in menu" data-ng-class="{on : page.idx == $index}"><a data-ng-href="{{commonLink({url:i.url,href:true})}}"><span>{{i.title}}</span><strong>{{i.title}}</strong></a></li>'+
 						'</ul>'+
@@ -160,4 +160,5 @@
 			}
 		}
 	}]);
+	
 })(window, window.angular);

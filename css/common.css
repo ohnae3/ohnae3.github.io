@@ -48,6 +48,7 @@ body {background:#fff;}
 #container.scroll_100 #header h1 img {opacity:0; margin-left:-15px;}
 /* #container.scroll_150 #menu .menu_wrap {position:fixed; left:0; top:0; background:rgba(255,255,255,0.9); z-index:1000;} */
 
+
 #nav {width:50px; opacity:0.3; border-radius:100%; overflow:hidden; cursor:pointer; height:50px; background:url(/img/common/sp.png) no-repeat -50px -80px; position:fixed; left:50%; top:280px; margin-left:650px;}
 #nav:hover {background-position:-50px -130px;}
 .scroll_150 #nav {background-position:0 -80px; top:380px;}
@@ -60,9 +61,11 @@ body {background:#fff;}
 #header h1 img {opacity:1; margin-left:0;}
 /*#header h1:before {content:''; display:block;position:absolute; left:-20px; top:-2px; width:80px; height:50px; background:url(/img/common/sp.png) no-repeat 0 -300px;}*/
 
-#menu {width:100%; overflow:hidden; line-height:50px; background:#fff; height:50px;}
-#menu.fix {position:fixed; left:0; top:0; z-index:100; box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}
-#menu ul {white-space:nowrap; width:100%; text-align:center;}
+
+
+#menu {width:100%; overflow:hidden; line-height:50px; background:#fff; height:50px; text-align:center;}
+#menu.fix {position:fixed; left:0; top:0; z-index:100; box-shadow:0 0 1px 1px rgba(0,0,0,0.1);}
+#menu ul {width:100%; overflow-x:auto; white-space:nowrap; font-size:0;}
 #menu ul li {color:#000; display:inline-block; font-weight:bold; font-size:18px; text-shadow:0 0 1px rgba(0,0,0,0.2);}
 #menu ul li a {-webkit-tap-highlight-color:transparent; display:block; color:#000; overflow:hidden; position:relative; padding:0 15px;}
 #menu ul li a span {display:block; position:relative; top:0; transition:0.2s all linear;}
@@ -157,17 +160,17 @@ body {background:#fff;}
 	.wrap {width:100%;}
 }
 @media screen and (max-width:800px) {
-	#menu ul li a {padding:0 10px;}
+	/*#menu ul li a {padding:0 10px;}*/
 	#visual img {width:160%; margin-left:-30%}
 }
 @media screen and (max-width:500px) {
-	#menu ul li a {padding:0 5px;}
+	/*#menu ul li a {padding:0 5px;}*/
 }
-/*
+
 @media screen and (max-width:430px) {
-	#menu ul li {font-size:12px;}
+	/*#menu ul li {font-size:12px;}*/
 }
-*/
+
 
 
 

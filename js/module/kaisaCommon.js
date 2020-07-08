@@ -152,7 +152,7 @@
 			return '?callback=JSON_CALLBACK&' + $httpParamSerializerJQLike(param); //jsonp 는 param 을  object 로 담을 수 없다
 		};
 		$scope.menu = [
-			{title: $scope.constant.titleName, url:'main'},
+			{title: '엣지스키', url:'main'},
 			{title:'예약게시판', url:'reservation'},
 			//{title:'1:1문의', url:'qna'},
 			{title:'요금/이용안내', url:'info'},
@@ -381,5 +381,6 @@
 				$scope.window.scrollTop = angular.element($window).scrollTop();
 			});
 		});
+		window.scope = $scope;
 	}]);
 })(window,window.angular);
