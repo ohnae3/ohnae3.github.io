@@ -158,14 +158,16 @@ body {background:#fff;}
 }
 @media screen and (max-width:800px) {
 	#menu ul li a {padding:0 10px;}
+	#visual img {width:160%; margin-left:-30%}
 }
 @media screen and (max-width:500px) {
 	#menu ul li a {padding:0 5px;}
 }
+/*
 @media screen and (max-width:430px) {
 	#menu ul li {font-size:12px;}
 }
-
+*/
 
 
 
