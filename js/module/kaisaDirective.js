@@ -25,7 +25,8 @@
 				'<div class="menu_wrap">'+
 					'<div class="wrap swipeMenuWrap">'+
 						'<ul>'+
-							'<li data-ng-repeat="i in menu" data-ng-class="{on : page.idx == $index}"><a data-ng-href="{{commonLink({url:i.url,href:true})}}"><span>{{i.title}}</span><strong>{{i.title}}</strong></a></li>'+
+							'<li data-ng-repeat="i in ui.menuList" data-ng-class="{on : page.idx == $index}"><a data-ng-href="{{commonLink({url:i.url,href:true})}}"><span>{{i.title}}</span><strong>{{i.title}}</strong></a></li>'+
+							// '<li><a href="http://pf.kakao.com/_xnKBLxb/chat"><span>카카오 상담</span><strong>카카오 상담</strong></a></li>'+
 						'</ul>'+
 					'</div>'+
 				'</div>'+
@@ -69,6 +70,43 @@
 					}
 					angular.element(el).append('<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk-HkVIpP_6oUhCU1-zTWzTSHxGksIA8o&callback=initMap"></script>');
 				},10);
+			}
+		}
+	}]);
+	
+	app.directive('kaisaCsInfo',[function(){
+		return {
+			template: '<div id="csInfo">'+
+			    '<div class="wrap">'+
+			      '<div class="layout3">'+
+			        '<div class="cont">'+
+			          '<img data-ng-src="{{image.host}}/img/main/icon_cs.png" alt="" />'+
+			          '<h4>고객센터</h4>'+
+			          '<p class="title">{{cs.telNm1}}</p>'+
+			          '<p>{{cs.telNo1}}</p>'+
+			          '<p class="title" data-ng-show="cs.telNo2">{{cs.telNo2}}</p>'+
+			          '<p data-ng-show="cs.telNm2">{{cs.telNm2}}</p>'+
+			        '</div>'+
+			      '</div>'+
+			      '<div class="layout3">'+
+			        '<div class="cont">'+
+			          '<h4>계좌안내</h4>'+
+			          '<img data-ng-src="{{image.host}}/img/main/icon_bank.png" alt="" />'+
+			          '<p class="title">{{cs.bankNm}}</p>'+
+			          '<p>{{cs.bankNo}}</p>'+
+			        '</div>'+
+			      '</div>'+
+			      '<div class="layout3">'+
+			        '<div class="cont">'+
+			          '<a href="http://pf.kakao.com/_xnKBLxb/chat"><img data-ng-src="{{image.host}}/img/main/icon_kakao.png" alt="" /></a>'+
+			          '<h4>카카오톡상담</h4>'+
+			          '<p class="title">가평 엣지 수상레져를</br>추가해주세요.</p>'+
+			        '</div>'+
+			      '</div>'+
+			    '</div>'+
+			  '</div>',
+			replace: true,
+			link: function($scope, el, attrs){
 			}
 		}
 	}]);

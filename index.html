@@ -48,11 +48,16 @@ gtag('config', 'UA-121564625-1');
 		<button type="button" data-ng-click="page.popup = false">닫기</button>
 	</div>
 </div> -->
+
 <div id="container" data-ng-class="{scroll_100 : window.scrollTop >= 100, scroll_150 : window.scrollTop >= 150, on : loading.first}">
 
-	<div kaisa-header></div>
-	<div kaisa-menu></div>
-
+	<div data-kaisa-header></div>
+	<div data-kaisa-menu></div>
+	
+	<!-- 
+	<div class="menuBtn" data-ng-class="{on : ui.menuStatus}" data-ng-click="ui.menuToggle()"><ul><li></li><li></li><li></li><li></li><li></li></ul></div>
+	-->
+	
 	<div id="contents">
 		<div class="wrap">
 
@@ -159,8 +164,9 @@ gtag('config', 'UA-121564625-1');
 		</div>
 	</div>
 
-	<div kaisa-map></div>
-	<div kaisa-footer></div>
+	<div data-kaisa-map></div>
+	<div data-kaisa-cs-info></div>
+	<div data-kaisa-footer></div>
 
 </div>
 </body>

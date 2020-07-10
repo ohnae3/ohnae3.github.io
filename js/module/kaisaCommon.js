@@ -151,14 +151,23 @@
 		$scope.jsonpParam = function(param){
 			return '?callback=JSON_CALLBACK&' + $httpParamSerializerJQLike(param); //jsonp 는 param 을  object 로 담을 수 없다
 		};
-		$scope.menu = [
-			{title: '엣지스키', url:'main'},
-			{title:'예약게시판', url:'reservation'},
-			//{title:'1:1문의', url:'qna'},
-			{title:'요금/이용안내', url:'info'},
-			{title:'펜션안내', url:'pension'},
-			{title:'근처펜션', url:'nearPension'}
-		];
+		
+		$scope.ui = {
+			menuStatus : false,
+			menuToggle : function(){
+				console.log(this.menuStatus);
+				(this.menuStatus) ? this.menuStatus = false : this.menuStatus = true;
+			},
+			menuList : [
+				{title: '엣지스키', url:'main'},
+				{title:'예약게시판', url:'reservation'},
+				//{title:'1:1문의', url:'qna'},
+				{title:'요금/이용안내', url:'info'},
+				{title:'펜션안내', url:'pension'},
+				{title:'근처펜션', url:'nearPension'}
+			]
+		};
+		
 		/**
 		 * @param param : {
 		 *     url : kaisaUrl 에 있는 링크값과 매치해야 한다.
@@ -217,6 +226,7 @@
 			}
 		};
 		$scope.cs = {
+			bankCd : 'ibk',
 			bankNm : '기업은행 (이강식)',
 			bankNo : '010-9902-2875',
 			telNm1 : '대표전화',
