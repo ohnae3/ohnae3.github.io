@@ -136,6 +136,30 @@
 			prev : function(){(0 < this.idx) ? this.idx-- : this.idx = this.total - 1;},
 			next : function(){(this.total > this.idx + 1) ? this.idx++ : this.idx = 0;}
 		};
+		
+		//바베큐
+		$scope.bbqList = [
+			{url : '/img/bbq/bbq1.png'},
+			{url : '/img/bbq/bbq2.png'},
+			{url : '/img/bbq/bbq3.png'},
+			{url : '/img/bbq/bbq4.png'},
+			//{url : '/img/bbq/bbq5.png'},
+			{url : '/img/bbq/bbq6.png'},
+			{url : '/img/bbq/bbq7.png'},
+			{url : '/img/bbq/bbq9.png'},
+			{url : '/img/bbq/bbq10.png'},
+			{url : '/img/bbq/bbq11.png'},
+			{url : '/img/bbq/bbq12.png'},
+			{url : '/img/bbq/bbq13.png'},
+			{url : '/img/bbq/bbq15.png'}
+		];
+		$scope.bbq = {
+			idx : 0,
+			total : $scope.bbqList.length,
+			click : function(idx){ this.idx = idx; },
+			prev : function(){(0 < this.idx) ? this.idx-- : this.idx = this.total - 1;},
+			next : function(){(this.total > this.idx + 1) ? this.idx++ : this.idx = 0;}
+		};
 
 	}]);
 })(window,window.angular);
