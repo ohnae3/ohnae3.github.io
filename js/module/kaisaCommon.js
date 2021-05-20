@@ -172,7 +172,7 @@
 		 * @param param : {
 		 *     url : kaisaUrl 에 있는 링크값과 매치해야 한다.
 		 *     query : object 로 파라메터(쿼리스트링)를 받는다.
-		 *     href : data-ng-href 를 사용할때 링크를 리턴해준다.
+		 *     href : data-ng-href 를 사용할때 링크를 리턴해준다.1
 		 *     reset : 공통 파라메터를 지운다. (TODO storage 제거)
 		 * }
 		 * @return data-ng-href & data-ng-click
@@ -212,9 +212,7 @@
 			open : function(option){
 				this.option = $.extend({}, this.optionDefault, option);
 				this.active = true;
-
 				var directiveName = this.option.target.replace(/([a-z])([A-Z])/g,'$1-$2').toLowerCase();
-
 				angular.element('#popupContent').empty().append($compile(angular.element('<div '+directiveName+'></div>'))($scope));
 			},
 			close : function(option){

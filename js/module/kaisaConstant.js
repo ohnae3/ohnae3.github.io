@@ -14,6 +14,7 @@
 			description : 'Mobydic 수상레저',
 			favicon : '/img/favicon.ico',
 			domain : '',
+			cdomain : '',
 			image : {
 				noImage : '/img/common/noImage.png',
 				host : '', //location.protocol + '//' + 'kaisa.co.kr' , 
