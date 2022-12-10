@@ -19,7 +19,7 @@
   "homepage": "https://github.com/ohnae3/ohnae3.github.io#readme",
   "dependencies": {
     "del": "^2.2.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
